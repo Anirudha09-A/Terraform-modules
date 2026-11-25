@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "rg" {
   location = "Central India"
 
   tags = {
-    environment = "dev"
+    environment = "prod"
     managed_by  = "terraform"
   }
 }
