@@ -36,3 +36,8 @@ module "nic" {
   source = "./modules/nic"
   depends_on = [module.subnet , module.public_ip]
 }
+
+module "virtual_machine" {
+  source = "./modules/virtual_machine"
+  depends_on = [module.nic]
+}
